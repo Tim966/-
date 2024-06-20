@@ -1,0 +1,55 @@
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "menu main main main main main"
+    "footer footer footer footer footer footer";
+  gap: 10px;
+  background-color: #ba89c0;
+  padding: 10px;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+.item1 {
+  grid-area: header;
+  height: 100vh;
+  background-color: #ba89c0;
+}
+.item2 {
+  grid-area: menu;
+  background-color: #a12e2e;
+}
+.item3 {
+  grid-area: main;
+  height: 80vh;
+  background-color: #259c96;
+}
+.item4 {
+  grid-area: footer;
+  height: 20vh;
+  background-color: #5e22ac;
+}
+.center-text {
+  text-align: center;
+}
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+}
+.iframe-container iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}

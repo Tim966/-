@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>耳機介紹</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f1f1f1;
+        color: #333;
+      }
+      .center-text {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+          "header header header header"
+          "menu main main main"
+          "footer footer footer footer";
+        grid-gap: 10px;
+      }
+      .grid-container > div {
+        background-color: #fff;
+        text-align: center;
+        padding: 20px;
+        font-size: 18px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .item1 {
+        grid-area: header;
+        background-color: #333;
+        color: #fff;
+        padding: 40px;
+        border-radius: 8px 8px 0 0;
+      }
+      .item2 {
+        grid-area: menu;
+        background-color: #666;
+        color: #fff;
+        border-radius: 0 0 8px 8px;
+      }
+      .item3 {
+        grid-area: main;
+        background-color: #ddd;
+        color: #333;
+        border-radius: 8px;
+      }
+      .item4 {
+        grid-area: footer;
+        background-color: #999;
+        color: #fff;
+        border-radius: 0 0 8px 8px;
+      }
+      .item4 a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+        transition: color 0.3s ease;
+      }
+      .item4 a:hover {
+        color: #ccc;
+      }
+      .item4 img {
+        width: 30px;
+        height: auto;
+        vertical-align: middle;
+        margin-right: 5px;
+      }
+      h1,
+      h2 {
+        margin-top: 0;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      th,
+      td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        background-color: #f2f2f2;
+      }
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 25px;
+        height: 0;
+      }
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center-text">
+      <h1>歡迎來到耳機世界！</h1>
+      <p>探索世界各種耳機，找到最適合你的聲音。</p>
+    </div>
+    <div class="grid-container">
+      <div class="item1">
+        <h2>精品耳機</h2>
+      </div>
+      <div class="item2">
+        <h2>選單</h2>
+        <ul>
+          <li><a href="#home">首頁</a></li>
+          <li><a href="#products">產品</a></li>
+          <li><a href="#about">關於我們</a></li>
+          <li><a href="#contact">聯絡我們</a></li>
+        </ul>
+      </div>
+      <div class="item3">
+        <h2>精選產品</h2>
+        <img src="C:\Users\user\Desktop\家電\img\耳機.jpg" alt="耳機圖片" />
+        <p>
+          這款耳機具有高音質和舒適的設計，讓您享受最佳的音樂體驗。它還具有優異的降噪功能，可以將外界噪音減至最低，讓您專注於您喜愛的音樂或是工作中。
+        </p>
+        <p>
+          不僅如此，這款耳機還擁有長時間的電池續航力，您可以盡情享受音樂而無需擔心電池耗盡的問題。它的輕巧設計也讓您可以隨身攜帶，隨時隨地享受音樂的樂趣。
+        </p>
+        <p>立即購買，帶上這款耳機，開啟您的音樂之旅！</p>
+        <table>
+          <tr>
+            <th>功能</th>
+            <th>描述</th>
+          </tr>
+          <tr>
+            <td>音質</td>
+            <td>高音質、降噪功能</td>
+          </tr>
+          <tr>
+            <td>電池</td>
+            <td>長時間續航、快速充電</td>
+          </tr>
+          <tr>
+            <td>設計</td>
+            <td>舒適、時尚外觀</td>
+          </tr>
+          <tr>
+            <td>連接性</td>
+            <td>藍牙、有線連接選擇</td>
+          </tr>
+        </table>
+      </div>
+      <div class="item4">
+        <p>影片介紹：</p>
+        <div class="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/lA0PwlaO46c?si=OBhg4i5mLvWrUujr"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <br />
+        <p>聯絡我們：</p>
+        <a href="mailto:info@example.com"
+          ><img src="img/email.png" alt="Email Icon" /><span
+            >info@example.com</span
+          ></a
+        >
+        <a href="tel:+123456789"
+          ><img src="img/phone.png" alt="Phone Icon" /><span
+            >+123456789</span
+          ></a
+        >
+        <br />
+        <br />
+        <p>關注我們：</p>
+        <a href="https://facebook.com"
+          ><img src="img/facebook.png" alt="Facebook Icon"
+        /></a>
+        <a href="https://twitter.com"
+          ><img src="img/twitter.png" alt="Twitter Icon"
+        /></a>
+      </div>
+    </div>
+    <title>My Page Title</title>
+  <link rel="icon" type="image/x-icon" href="C:\Users\user\Desktop\家電\img\下載.png">
+</head>
+  </body>
+</html>
